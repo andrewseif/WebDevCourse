@@ -379,3 +379,4 @@ assignments/kafka-assignment/producer-consumer-node-sample/node_modules/kafkajs/
 assignments/kafka-assignment/producer-consumer-node-sample/node_modules/kafkajs/src/utils/websiteUrl.js
 assignments/kafka-assignment/producer-consumer-node-sample/node_modules/kafkajs/types/index.d.ts
 kafka/kafka-nodejs/node_modules/*
+node_modules/*
