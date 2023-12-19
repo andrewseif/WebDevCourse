@@ -7,7 +7,7 @@ async function run(){
     {
         const kafka = new Kafka({
             clientId: 'myapp',
-            brokers: ['localhost:29091'],
+            brokers: ['localhost:29091','localhost:29092','localhost:29093'],
           });
 
         const producer = kafka.producer();
