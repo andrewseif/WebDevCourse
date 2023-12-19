@@ -6,7 +6,7 @@ async function run(){
     {
         const kafka = new Kafka({
             clientId: 'myapp',
-            brokers: ['localhost:19092'],
+            brokers: ['localhost:29091'],
           });
 
         const admin = kafka.admin();
