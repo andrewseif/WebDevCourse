@@ -7,7 +7,7 @@ async function run(){
     {
         const kafka = new Kafka({
             clientId: 'myapp',
-            brokers: ['localhost:29091','localhost:29092','localhost:29093'],
+            brokers: ['127.0.0.1:9094'],
           });
 
         const producer = kafka.producer();
@@ -16,11 +16,12 @@ async function run(){
         console.log("Connected!")
         //A-M 0 , N-Z 1 
         const partition = msg[0] < "N" ? 0 : 1;
-        const result =  await producer.send({
+        const result =  await this.client.connect();
+        await producer.send({
             "topic": "Users",
             "messages": [
                 {
-                    "value": msg,
+                    "value": 100000,
                     "partition": partition
                 }
             ]

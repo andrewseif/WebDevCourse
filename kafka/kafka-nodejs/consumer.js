@@ -7,7 +7,7 @@ async function run(){
     {
         const kafka = new Kafka({
             clientId: 'myapp',
-            brokers: ['127.0.0.1:29091','localhost:29092','localhost:29093'],
+            brokers: ['127.0.0.1:9094'],
           });
 
         const consumer = kafka.consumer({"groupId": "test"})
